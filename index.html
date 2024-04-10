@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./src/styles/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./public/images/favicon-32x32.png">
   
   <title> Password generator app</title>
 </head>
@@ -12,17 +12,20 @@
   <div class="wrapper">
     <div><p class="titleApp">Password Generator</p></div>
 
-    <div class="show">
-      <p>P4$5W0rD!</p>
-       <img src="./assets/images/icon-copy.svg" alt="">
+    <div class="show between-wrapper">
+      <div><p>P4$5W0rD!</p></div>
+       <div><img  width="13" src="./public/images/icon-copy.svg" ></div>
       </div> 
 
     <div class="showInput">
       <div>
 
-        <div >
-          <div class="charlength"><p>Character Length</p> <p id="rangeValue">10</p></div>
-          <input type="range" min="1" max="20" value="10" oninput="rangeValue.innerText = this.value" class=" range-field">
+        <div class=" slider-container" >
+          <div class="charlength between-wrapper">
+            <p class="characters">Character Length</p> 
+            <p id="rangeValue" class="number">10</p>
+          </div>
+          <input type="range" min="1" max="20" value="10" oninput="rangeValue.innerText = this.value" class="range-field">
 
         </div>
 
@@ -37,7 +40,7 @@
       </div>
       <div  class="checkbox-wrapper">
         <input type="checkbox" id="numeral">
-        <label for="numeral">Include Numbers</label>
+        <label for="numeral" class="">Include Numbers</label>
       </div>
 
       <div  class="checkbox-wrapper">
@@ -46,15 +49,22 @@
       </div>
 
       <div= class="StrengthIndicator">
-        <P>Strength</P>
-        <span class="TOO WEAK">1</span1>
-        <span class="WEAK">2</span2>
-        <span class="MEDIUM">3</span3>
-        <span class="STRONG">4</span>
+        <div><P>STRENGTH</P></div>
+        <div class="strength-wrapper">
+          <span class="strength-stages" data-stages="1:TOO WEAK, 2:WEAK, 3:MEDIUM, 4:STRONG">TOO WEAK</span>
+          <div class="boxes">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+  
+        
 
       </div>
 
-    <button> Generate <img src="./assets/images/icon-arrow-right.svg" alt=""></button>
+    <button class="button-generate"><span>GENERATE</span> <img width="10" src="./public/images/icon-arrow-right.svg" alt=""></button>
 
       </div>
       
@@ -64,6 +74,6 @@
 
   </div>
 
-  
+  <script type="application/javascript" src="src/scripts/script.js"> </script>
 </body>
 </html>
