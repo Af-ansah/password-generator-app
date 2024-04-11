@@ -19,12 +19,14 @@ function moveSlide() {
     slider.addEventListener('input', function (event) {
         var inputValue = event.target.value;
         var rangeValue = (Number(inputValue) / 20) * 100;
-        // if(Number(inputValue) > 8){
-        //   strengthCheck += 1;  
-        // }else{
-        //     strengthCheck -= 1;
-        // }
         slider.style.backgroundSize = "".concat(rangeValue, "% 100%");
+        if (Number(inputValue) === 0) {
+            alert("Pease increase the character length");
+            generateButton.disabled = true;
+        }
+        else {
+            generateButton.disabled = false;
+        }
     });
 }
 //function for checking strength
@@ -75,7 +77,6 @@ copy.addEventListener('click', function () {
     }
     var textArea = document.createElement("textarea");
     textArea.value = generatedPassword.value;
-    //textArea.style.display = "none";
     document.body.appendChild(textArea);
     textArea.select();
     document.execCommand('copy');
@@ -124,11 +125,6 @@ generateButton.addEventListener('click', function () {
 });
 //function for applying colors
 function showColor() {
-    // if(Number(inputValue) < 8){
-    //     strengthCheck -= 2;
-    // }else if(Number(inputValue) >= 16){
-    //     strengthCheck += 1;
-    // }
     switch (strengthCheck) {
         case 1:
             box1.style.background = "#F64A4A";
