@@ -1,4 +1,7 @@
-
+@font-face {
+    font-family:"JetBrains";
+    src: url("../../public/fonts/JetBrainsMono-VariableFont_wght.ttf");
+}
 body{
     background-color:#18171F ;
     margin: 0;
@@ -7,7 +10,7 @@ body{
 }
 
 .titleApp{
-    font-style: JetBrains Mono Bold;
+    font-family: "JetBrains", sans-serif;
     font-size: 18px;
 }
 .wrapper{
@@ -31,10 +34,10 @@ fill: white;
 .between-wrapper{
     color: whitesmoke;
     background:#24232C;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     justify-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
     
         
  }
@@ -73,7 +76,7 @@ fill: white;
 
 .charlength{
     font-size: 12px;
-    font-style:JetBrains Mono Bold ;
+    font-family: "JetBrains", sans-serif;
 }
 #copy-img{
     fill: #A4FFAF;
@@ -178,7 +181,7 @@ input[type="range"] {
     transform: translate(-0px , -0px);
     color: #18171F;
     font-size: 15px;
-    font-style: JetBrains Mono Bold;
+    font-family: "JetBrains", sans-serif;
 }
 
 
@@ -234,10 +237,9 @@ button{
     justify-content: center; 
     border: none;
     font-size: x-small;
-    font-family: JetBrains Mono Bold ;
     display: flex;
     column-gap: 2rem;
-    font-style: JetBrains Mono Bold;
+    font-family: "JetBrains", sans-serif;
     
 }
 
