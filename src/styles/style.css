@@ -2,6 +2,7 @@
     font-family:"JetBrains";
     src: url("../../public/fonts/JetBrainsMono-VariableFont_wght.ttf");
 }
+
 body{
     background-color:#18171F ;
     margin: 0;
@@ -12,6 +13,8 @@ body{
 .titleApp{
     font-family: "JetBrains", sans-serif;
     font-size: 18px;
+    text-align: center;
+    color: #817D92;
 }
 .wrapper{
   display: flex;
@@ -25,31 +28,27 @@ body{
 .show{ 
     margin-bottom: 15px;
     width: 250px;
-    padding: 10px 17px;  
+    padding: 15px 17px;  
 }
 .show:hover #copy-img{
-fill: white;
+fill: #E6E5EA;
 }
 
 .between-wrapper{
-    color: whitesmoke;
+    color: #E6E5EA;
     background:#24232C;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    justify-items: center;
-    
-        
+    justify-items: center;  
+  
  }
-
 
  .copied {
     color: #A4FFAF;
     font-size: 13px;
     margin-right: 0.5rem;
     display: none;
-    
-
  }
 
  .copy-element{
@@ -61,7 +60,7 @@ fill: white;
     background:#24232C;
     border: none;
     font-size: 13px;
-    color:white;
+    color:#E6E5EA;
  }
 .showInput{
 
@@ -69,38 +68,28 @@ fill: white;
     width: 250px;
     padding: 5px 17px; 
     padding-bottom: 15px;
-    color: rgb(186, 184, 184);
+    color: #817D92;
 }
-
-
 
 .charlength{
     font-size: 12px;
     font-family: "JetBrains", sans-serif;
 }
-#copy-img{
-    fill: #A4FFAF;
 
-    
+#copy-img{
+    fill: #A4FFAF; 
 }
+
 .copy{
 width: 15px;
 cursor: pointer;
 }
 
-
-.titleApp{
-  
-    text-align: center;
-    color: grey;
-}
-    
-
 .characters{
   font-size: small;
-
 }
 
+/* slider */
 .number{
     font-size: 20px;
     color: #A4FFAF;
@@ -115,22 +104,20 @@ input[type="range"] {
     background-image: linear-gradient(#A4FFAF, #A4FFAF);
     background-size: 0% 100%;
     background-repeat: no-repeat;
-      
-      
-
   }
+
   input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
     height: 15px;
     width: 15px;
     border-radius: 50%;
-    background:#ececef;
+    background:#E6E5EA;
     cursor: ew-resize;
-    box-shadow: 0 0 2px 0 #737379;
-    /* transition: background .3s ease-in-out; */
+    box-shadow: 0 0 2px 0 #817D92;
   }
+
 .slider-container{
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 /* checkbox */
@@ -138,14 +125,11 @@ input[type="range"] {
  .checkbox-wrapper{
     font-size: smaller;
     margin-top: 5px;
-    
  }  
-
 
  input[type=checkbox]{
     width: 0;
 }
-
 
 .checkbox-wrapper label{
     position: absolute;
@@ -162,16 +146,13 @@ input[type="range"] {
     top: 0;
     width: 10px;
     height: 10px;
-    border:1px solid white ;
+    border:1px solid #E6E5EA ;
     background-color: #18171F;
-
 }
-
 
 .checkbox-wrapper input[type="checkbox"]:checked + label:before{
     background-color:#A4FFAF;;
 }
-
 
 .checkbox-wrapper input[type="checkbox"]:checked + label:after{
     content: '✓';
@@ -184,9 +165,6 @@ input[type="range"] {
     font-family: "JetBrains", sans-serif;
 }
 
-
-
-
 /*strength Indicator*/
 
 .StrengthIndicator{
@@ -197,9 +175,11 @@ input[type="range"] {
     padding: 0.5rem;
     margin: 1rem 0rem;
 }
+
 .StrengthIndicator div p{
     font-size: x-small;
 }
+
 .strength-wrapper {
     display: flex;
     justify-items: center;
@@ -212,16 +192,16 @@ input[type="range"] {
     gap: 3px;
    
 }
+
 .boxes div{
-    border: 1px solid rgb(251, 244, 244);
+    border: 1px solid #E6E5EA;
     height: 12px;
     width: 3px;
     background-color:#18171F;
-
 }
 
 .strength-stages {
-    color: white;
+    color: #E6E5EA;
     font-size: small;
     font: bold;
 }
@@ -240,7 +220,7 @@ button{
     display: flex;
     column-gap: 2rem;
     font-family: "JetBrains", sans-serif;
-    
+    cursor: pointer;
 }
 
 button:hover{

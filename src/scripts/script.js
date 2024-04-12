@@ -29,10 +29,6 @@ function moveSlide() {
         }
     });
 }
-//function for checking strength
-function checkStrength(event) {
-    var input = event.target;
-}
 //function for generating password
 function generatePassword() {
     var sliderValue = slider.value;
@@ -61,7 +57,6 @@ function generatePassword() {
     if (specialCharValue) {
         validCharacters += specialCharacters;
     }
-    // const validCharacters= upperCaseChar + lowerCaseChar + digits + specialCharacters;
     var password = '';
     for (var i = 0; i < Number(sliderValue); i++) {
         var randomIndex = Math.floor(Math.random() * validCharacters.length);
@@ -123,7 +118,7 @@ specialChar.addEventListener('input', function () {
 generateButton.addEventListener('click', function () {
     generatePassword();
 });
-//function for applying colors
+//function for  strength check colors
 function showColor() {
     switch (strengthCheck) {
         case 1:
