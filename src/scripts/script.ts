@@ -30,15 +30,7 @@ function moveSlide(){
     }else{
         generateButton.disabled = false;
     }
-})
-   
-}
-
-//function for checking strength
-function checkStrength(event:Event){
-    const input = event.target as HTMLInputElement;
-     
-
+ })
 }
 
 //function for generating password
@@ -72,24 +64,15 @@ function generatePassword(){
         validCharacters += specialCharacters;
     }
 
-
-    // const validCharacters= upperCaseChar + lowerCaseChar + digits + specialCharacters;
     let password ='';
     for(let i=0; i< Number(sliderValue); i++){
         const randomIndex = Math.floor(Math.random()*validCharacters.length  );
         password += validCharacters[randomIndex];
-       
     }
-
-    
     generatedPassword.value = password;
-
 }
 
-
 // function for copying to clipboard
-
-
 copy.addEventListener('click', () => {
     if(!generatedPassword.value){
       alert("Generate password first!");
@@ -102,10 +85,7 @@ copy.addEventListener('click', () => {
     document.execCommand('copy');
     document.body.removeChild(textArea);
     copied.style.display = "inline-block";
-    
 } )
-
-
 
 //Event listeners
  upperCase.addEventListener('input',() =>{
@@ -114,7 +94,6 @@ copy.addEventListener('click', () => {
     }else{
         strengthCheck -=1;
     }
-    
     showColor();
  });
 lowerCase.addEventListener('input', () => {
@@ -131,7 +110,6 @@ numbers.addEventListener('input', () =>{
       }else{
         strengthCheck -=1;
     }
-    
     showColor();
    });
 
@@ -141,18 +119,13 @@ specialChar.addEventListener('input', () =>{
       }else{
         strengthCheck -=1;
     }
-    
     showColor();
    });
-
 generateButton.addEventListener('click', () => {
     generatePassword()
 });
 
-
-
-
-//function for applying colors
+//function for  strength check colors
 function showColor(){
     switch(strengthCheck){
      case 1:
@@ -189,9 +162,6 @@ function showColor(){
         box2.style.background = "#18171F";
         box3.style.background = "#18171F";
         box4.style.background = "#18171F";
-
     }
-    
 }
-
 moveSlide();
