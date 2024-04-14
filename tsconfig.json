@@ -1,7 +1,17 @@
 {
-    "compilerOptions": {
-        "esModuleInterop": true,
-        "target": "ES2022",
-        "moduleResolution": "Node"
-    }
+  "compilerOptions": {
+      "esModuleInterop": true,
+      "target": "ES5",
+      "allowJs": true,
+      "module": "CommonJS",
+      "outDir": "public/js",
+      "rootDir": "src",
+      "lib": [
+          "ES2015",
+          "DOM"
+      ]
+  },
+  "include": [
+      "src"
+  ]
 }
