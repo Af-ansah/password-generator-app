@@ -73,19 +73,20 @@ function generatePassword(){
 }
 
 // function for copying to clipboard
-copy.addEventListener('click', () => {
+copy.addEventListener('click', async () => {
     if(!generatedPassword.value){
       alert("Generate password first!");
       return;
     }
-    const textArea = document.createElement("textarea");
-    textArea.value = generatedPassword.value;
-    document.body.appendChild(textArea);
-    textArea.select()
-    document.execCommand('copy');
-    document.body.removeChild(textArea);
+    await copyToClipboard(generatedPassword.value);
     copied.style.display = "inline-block";
 } )
+
+async function copyToClipboard(value: string){
+   
+        await navigator.clipboard.writeText(value);
+   
+}
 
 //Event listeners
  upperCase.addEventListener('input',() =>{

@@ -1,22 +1,23 @@
 @font-face {
-    font-family:"JetBrains";
+    font-family: "JetBrains";
     src: url("../../public/fonts/JetBrainsMono-VariableFont_wght.ttf");
 }
 
-body{
+body {
     background-color:#18171F ;
     margin: 0;
     box-sizing: border-box;
    
 }
 
-.titleApp{
+.titleApp {
     font-family: "JetBrains", sans-serif;
     font-size: 18px;
     text-align: center;
     color: #817D92;
 }
-.wrapper{
+
+.wrapper {
   display: flex;
   flex-direction: column; 
   justify-content: center; 
@@ -24,17 +25,18 @@ body{
   height: 100vh;
 }
 
-/*character lenght*/
-.show{ 
+/*character length*/
+.show { 
     margin-bottom: 15px;
     width: 250px;
     padding: 15px 17px;  
 }
-.show:hover #copy-img{
-fill: #E6E5EA;
+
+.show:hover #copy-img {
+    fill: #E6E5EA;
 }
 
-.between-wrapper{
+.between-wrapper {
     color: #E6E5EA;
     background:#24232C;
     display: flex;
@@ -51,18 +53,18 @@ fill: #E6E5EA;
     display: none;
  }
 
- .copy-element{
+ .copy-element {
     justify-content: center;
     align-items: center;
     display: flex;
  }
- .generated-password{
+ .generated-password {
     background:#24232C;
     border: none;
     font-size: 13px;
     color:#E6E5EA;
  }
-.showInput{
+.showInput {
 
     background:#24232C;
     width: 250px;
@@ -71,26 +73,26 @@ fill: #E6E5EA;
     color: #817D92;
 }
 
-.charlength{
+.charlength {
     font-size: 12px;
     font-family: "JetBrains", sans-serif;
 }
 
-#copy-img{
+#copy-img {
     fill: #A4FFAF; 
 }
 
-.copy{
+.copy {
 width: 15px;
 cursor: pointer;
 }
 
-.characters{
+.characters {
   font-size: small;
 }
 
 /* slider */
-.number{
+.number {
     font-size: 20px;
     color: #A4FFAF;
     font-weight:700;
@@ -116,13 +118,13 @@ input[type="range"] {
     box-shadow: 0 0 2px 0 #817D92;
   }
 
-.slider-container{
+.slider-container {
     margin-bottom: 2rem;
 }
 
 /* checkbox */
 
- .checkbox-wrapper{
+ .checkbox-wrapper {
     font-size: smaller;
     margin-top: 5px;
  }  
@@ -131,7 +133,7 @@ input[type="range"] {
     width: 0;
 }
 
-.checkbox-wrapper label{
+.checkbox-wrapper label {
     position: absolute;
     padding-left: 20px;
     cursor: pointer;
@@ -139,7 +141,7 @@ input[type="range"] {
     line-height: 10px;
 }
 
-.checkbox-wrapper label:before{
+.checkbox-wrapper label:before {
     content: '';
     position: absolute;
     left: 0;
@@ -150,11 +152,11 @@ input[type="range"] {
     background-color: #18171F;
 }
 
-.checkbox-wrapper input[type="checkbox"]:checked + label:before{
+.checkbox-wrapper input[type="checkbox"]:checked + label:before {
     background-color:#A4FFAF;;
 }
 
-.checkbox-wrapper input[type="checkbox"]:checked + label:after{
+.checkbox-wrapper input[type="checkbox"]:checked + label:after {
     content: '✓';
     position:absolute; 
     left: 0;
@@ -167,7 +169,7 @@ input[type="range"] {
 
 /*strength Indicator*/
 
-.StrengthIndicator{
+.StrengthIndicator {
     display: flex;
     font-size: small;
     justify-content: space-between;
@@ -176,7 +178,7 @@ input[type="range"] {
     margin: 1rem 0rem;
 }
 
-.StrengthIndicator div p{
+.StrengthIndicator div p {
     font-size: x-small;
 }
 
@@ -187,13 +189,12 @@ input[type="range"] {
     column-gap: 0.5rem;
 }
 
-.boxes{
+.boxes {
     display: flex;
     gap: 3px;
-   
 }
 
-.boxes div{
+.boxes div {
     border: 1px solid #E6E5EA;
     height: 12px;
     width: 3px;
@@ -208,7 +209,7 @@ input[type="range"] {
 
 
 /*button*/
-button{
+button {
     background-color:rgb(164, 255, 175);
     color: rgb(49, 48, 48);
     width: 100%;
@@ -223,14 +224,13 @@ button{
     cursor: pointer;
 }
 
-button:hover{
+button:hover {
     background-color: #18171F;
     border:1px outset #A4FFAF;;
     color: #A4FFAF;;
 }
 
-
-.button-generate:hover #arrow-img{
+.button-generate:hover #arrow-img {
     fill: #A4FFAF;
 }
 
