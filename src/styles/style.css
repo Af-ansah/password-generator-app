@@ -153,7 +153,7 @@ input[type="range"] {
 }
 
 .checkbox-wrapper input[type="checkbox"]:checked + label:before {
-    background-color:#A4FFAF;;
+    background-color:#A4FFAF;
 }
 
 .checkbox-wrapper input[type="checkbox"]:checked + label:after {
@@ -204,7 +204,7 @@ input[type="range"] {
 .strength-stages {
     color: #E6E5EA;
     font-size: small;
-    font: bold;
+    font-weight: bold;
 }
 
 
@@ -226,8 +226,8 @@ button {
 
 button:hover {
     background-color: #18171F;
-    border:1px outset #A4FFAF;;
-    color: #A4FFAF;;
+    border:1px outset #A4FFAF;
+    color: #A4FFAF;
 }
 
 .button-generate:hover #arrow-img {
