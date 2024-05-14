@@ -5,13 +5,13 @@
       "allowJs": true,
       "module": "CommonJS",
       "outDir": "public/js",
-      "rootDir": "src",
+      "rootDir": "./",
       "lib": [
           "ES2015",
           "DOM"
       ]
   },
   "include": [
-      "src"
-  ]
+      "src", "tests"
+  ] 
 }

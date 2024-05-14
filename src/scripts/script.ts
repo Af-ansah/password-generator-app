@@ -16,7 +16,6 @@ const strengthStages = document.querySelector(".strength-stages") as HTMLSpanEle
 
 let strengthCheck = 0;
 
-
 //changing the range of the slider
 function moveSlide(){
     slider.addEventListener('input', (event)=>{
@@ -24,7 +23,7 @@ function moveSlide(){
     const rangeValue = (Number(inputValue)/20)*100;
     slider.style.backgroundSize = `${rangeValue}% 100%`;
     if(Number(inputValue) === 0){
-        alert("Pease increase the character length");
+        alert("Please increase the character length");
         generateButton.disabled = true;
        
     }else{
@@ -34,7 +33,7 @@ function moveSlide(){
 }
 
 //function for generating password
-function generatePassword(){
+export function generatePassword(){
 
     const sliderValue = slider.value;
     const upperCaseValue = upperCase.checked;
